@@ -1,0 +1,15 @@
+問1
+詳細ページに削除リンクを作成した場合、link_toの正しい記述は以下のどれでしょうか。
+なお、ルーティングはresources :blogsで定義され、showアクションは@blog = Blog.find(params[:id])で定義されているとします。
+
+　a. <%= link_to, "削除", blog_path(@blog), method: :delete %>
+　b. <%= link_to "削除", blog_path(@blog), method: :delete %>
+　c. <%= link_to, "削除", blog_path(@blog), method: :destroy %>
+　d. <%= link_to "削除", blog_path(@blog), method: :destroy %>
+　
+A.
+　d. <%= link_to "削除", blog_path(@blog), method: :destroy %>
+→　b. <%= link_to "削除", blog_path(@blog), method: :delete %>
+
+
+
